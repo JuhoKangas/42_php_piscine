@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Basics</title>
+		<style>
+			body {
+				background-color: pink;
+			}
+
+			.title {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.title-welcome {
+				color: white;
+			}
+
+			.container {
+				display: flex;
+				align-items: center;
+			}
+
+			.image {
+				flex: 1;
+				display: flex;
+				flex-flow: column nowrap;
+				align-items: center;
+				justify-items: flex-end;
+			}
+
+			img {
+				max-width: 75%;
+			}
+
+			.title-welcome {
+				/* margin: auto; */
+				font-size: 8rem;
+			}
+
+			footer {
+				display: flex;
+				justify-content: end;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="title">
+			<h1 class="title-welcome">ƜëĬčōʍȇ</h1>
+		</div>
+		<div class="container">
+			<div class="image">
+				<img
+					src="https://projectcoyote.org/wp-content/uploads/2015/08/patagonia-logo.jpg"
+					alt="patagonia logo"
+				/>
+				<a href="https://www.patagonia.com/home/" target="_blank" rel="noopener noreferrer">patagonia</a>
+			</div>
+			<div class="image">
+				<img
+					src="https://www.fjallraven.com/4a7b2f/contentassets/8eeb72741e924d5895284909f599bc2a/fjr_kanken_badge_rgb_2x.png"
+					alt="fjallraven logo"
+				/>
+				<a href="https://www.fjallraven.com/fi/fi-fi" target="_blank" rel="noopener noreferrer">fjallraven</a>
+			</div>
+		</div>
+		<hr />
+		<footer>
+			<p style="font-family: monospace"><em> &copy; jkangas 2022</em></p>
+		</footer>
+	</body>
+</html>
