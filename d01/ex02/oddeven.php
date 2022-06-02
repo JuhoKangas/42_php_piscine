@@ -11,11 +11,10 @@
             }
             $num = intval($num);
             if ($num % 2 == 1) {
-                echo "The number $num is odd";
+                echo "The number $num is odd\n";
             } else {
-                echo "The number $num is even";
+                echo "The number $num is even\n";
             }
-            echo "\n";
         }
         else {
             echo "\n";
