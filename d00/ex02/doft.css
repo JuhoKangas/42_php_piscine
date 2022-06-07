@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 1400px;
+	width: 2545px;
+	font-size: 16px;
+	background-color: #505050;
+	font-family: sans-serif;
+}
+
+main {
+	width: 70%;
+	margin: auto;
+	margin-top: 25px;
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-gap: 30px;
+}
+
+/* HEADER */
+
+.container--header {
+	background-color: #909090;
+	display: flex;
+	border-radius: 15px;
+	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.8);
+	max-width: 75%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: auto;
+}
+
+.img--doft {
+	width: 35%;
+}
+
+.img--loupe {
+	position: relative;
+	top: 15%;
+	width: 19%;
+	right: -1%;
+}
+
+.side-icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.side-icons img {
+	width: 40px;
+	padding: 5px 5px;
+}
+
+/* SIDENAV */
+
+.container--nav {
+	height: 75%;
+	width: 180px;
+	padding: 10% 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #909090;
+	border-radius: 15px;
+	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.8);
+}
+
+.img--oeil {
+	border: 7px solid red;
+	border-radius: 10px;
+}
+
+/* CENTER PICTURE */
+
+.center-picture {
+	height: 100%;
+	padding: 10px;
+	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.8);
+	border-radius: 15px;
+	background-color: #909090;
+}
+
+.center-picture img {
+	width: 100%;
+}
+
+/* SIDEBAR */
+
+.container--sidebar {
+	height: 75%;
+	width: 180px;
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #909090;
+	border-radius: 15px;
+	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.8);
+}
+
+.bricks {
+	height: 90px;
+	width: 150px;
+	margin: 10px 0 0 -26px;
+	background: url(resources/brick.jpg) repeat;
+	background-size: 27%;
+}
+
+/* BOTTOM BOX */
+
+.bottom-box {
+	background-color: #88ff89;
+	position: absolute;
+	padding: 10px 30px 40px 20px;
+	font-size: 170%;
+	top: 950px;
+	left: 250px;
+	width: 750px;
+	height: 250px;
+	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.8);
+	border-radius: 15px;
+}
+
+.bottom-box--entrez {
+	font-size: 200%;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 400;
+}
+
+.bottom-box--ordinateurs {
+	text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.6);
+}
+
+.input {
+	width: 100%;
+}
+
+.input input {
+	width: 80%;
+	height: 30px;
+	border: 2px inset rgb(182, 179, 179);
+}
+
+.input button {
+	height: 30px;
+	font-size: large;
+	border: outset 1px rgb(195, 195, 195);
+	border-radius: 2px;
+	padding: 0 5px;
+}

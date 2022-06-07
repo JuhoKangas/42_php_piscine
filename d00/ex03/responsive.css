@@ -1,0 +1,121 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.5vw;
+	background-image: linear-gradient(rgb(83, 234, 239), rgb(50, 92, 126));
+	height: 100vh;
+	color: #333;
+}
+
+.container {
+	display: grid;
+	margin: 100px auto;
+	grid-template-columns: repeat(18, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-gap: 5px;
+	max-width: 95vw;
+}
+
+.container--bottom {
+	display: grid;
+	margin: 50px 5% 0 15%;
+	grid-template-columns: repeat(15, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 5px;
+	max-width: 95vw;
+}
+
+.element {
+	height: 5vw;
+	border-radius: 10%;
+	box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.2);
+	border: 1px solid steelblue;
+	display: flex;
+}
+
+.element--footnote {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+.element--symbol {
+	padding-top: 5%;
+	font-size: 100%;
+	font-weight: 700;
+	align-self: center;
+	order: 2;
+	flex-basis: 100%;
+}
+
+.element--number {
+	font-size: 40%;
+	order: 1;
+	align-self: flex-end;
+	flex-basis: 100%;
+	padding: 5%;
+}
+
+.element--weight {
+	font-size: 40%;
+	order: 3;
+	align-self: flex-end;
+	flex-basis: 100%;
+	padding: 5%;
+	margin-left: -10%;
+}
+
+.mendeleev {
+	background-image: url(https://images.newscientist.com/wp-content/uploads/2017/04/13170132/h4130415-dmitry_mendeleyev_russian_chemist.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.element--alkali-metal {
+	background-color: yellow;
+}
+
+.element--alkali-earth-metal {
+	background-color: green;
+}
+
+.element--lanthanide {
+	background-color: rgb(121, 49, 121);
+}
+
+.element--actinide {
+	background-color: rgb(221, 80, 80);
+}
+
+.element--transition-metal {
+	background-color: lightgreen;
+}
+
+.element--post-trans-metal {
+	background-color: steelblue;
+}
+
+.element--metalloid {
+	background-color: darkgray;
+}
+
+.element--nonmetal {
+	background-color: darkcyan;
+}
+
+.element--halogen {
+	background-color: lightskyblue;
+}
+
+.element--noble-gas {
+	background-color: orange;
+}
+
+.element--unknown-props {
+	background-color: rgb(212, 212, 212);
+}
