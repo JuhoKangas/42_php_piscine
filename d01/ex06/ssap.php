@@ -4,7 +4,7 @@
         exit (0);
     $str = "";
     for ($i = 1; $i < $argc; $i++){
-        $tmp = preg_replace('/\s+/', ' ', $argv[$i]);
+        $tmp = trim(preg_replace('/\s+/', ' ', $argv[$i]));
         $str .= "$tmp ";
     }
     $str = trim($str);

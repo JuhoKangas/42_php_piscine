@@ -5,6 +5,5 @@
     $str = $argv[1];
     $str = trim($str);
     $str = preg_replace('/ +/', ' ', $str);
-    echo ($str);
-    echo "\n";
+    echo "$str\n";
 ?>
