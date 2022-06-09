@@ -3,6 +3,6 @@
     if ($argc < 2)
         exit (0);
     $str = $argv[1];
-    $str = trim(preg_replace('/\s+/', ' ', $str));
+    $str = trim(preg_replace('/[ \t]+/', ' ', $str));
     echo "$str\n";
 ?>
