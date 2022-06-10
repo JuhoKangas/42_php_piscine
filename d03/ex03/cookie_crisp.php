@@ -5,16 +5,15 @@
 
     switch ($action) {
         case 'set':
-            setcookie($name, $value, time()+3600);
+            setcookie($name, $value, time() + 3600);
             break;
             
         case 'get':
-            if (isset($_COOKIE[$name]))
+            if ($_COOKIE[$name])
                 echo $_COOKIE[$name] . "\n";
             break;
             
         case 'del':
-            unset($_COOKIE[$name]);
             setcookie($name, '', time() - 3600);
             break;
     }
