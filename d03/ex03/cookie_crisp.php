@@ -9,13 +9,13 @@
             break;
             
         case 'get':
-            if ($_COOKIE[$name])
+            if (isset($_COOKIE[$name]))
                 echo $_COOKIE[$name] . "\n";
             break;
             
         case 'del':
             unset($_COOKIE[$name]);
-            setcookie($name, $value, time() - 3600);
+            setcookie($name, '', time() - 3600);
             break;
     }
 ?>
