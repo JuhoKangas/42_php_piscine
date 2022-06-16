@@ -1,5 +1,5 @@
 <?php
-    class Jaime {
+    class Jaime extends Lannister {
         function sleepWith($person) {
             if ($person instanceof Tyrion)
                 print ("Not even if I'm drunk !" . PHP_EOL);
