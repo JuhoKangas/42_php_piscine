@@ -1,0 +1,75 @@
+
+<- Vector ----------------------------------------------------------------------
+Vector class is used to represent directions or movements and can 
+be applied to vector operations. It is constructed out of two parameters:
+'orig' which is the vectors origin and 'dest' which is the vector destination
+
+A vector is represented by the following characteristics:
+- Its x magnitude
+- Its y magnitude
+- Its z magnitude
+- The w coordinate
+
+New vector can be created with 
+new Vector( array( 'dest' => #instanceOfVertex, 'orig' => #instanceOfVertex );
+
+All attributes are private and can be set with set() and read by get()
+
+Vector class contains following methods:
+
+- magnitude() which returns the norme of the instanced Vector
+- normalize() which return normalized Vector
+- add(Vector $rhs) which returns the addition between two vectors
+- sub(Vector $rhs) which returns the substraction between two vectors
+- opposite() which returns the opposite vector
+- scalarProduct($k) which returns the multiplication of the vector with the scalar
+- dotProduct(Vector $rhs) which returns the scalar production of both vectors
+- cos(Vector $rhs) which returns the cosine between both vectors
+- Vector crossProduct(Vector $rhs) which returns the cross multiplication of both vectors (right handed set)
+---------------------------------------------------------------------- Vector ->Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+Vertex( x: 0.00, y: 0.00, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vertex( x: 0.00, y: 0.00, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) destructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Magnitude is 0
+
+Warning: Division by zero in /Users/jkangas/Desktop/php-piscine/personal_repo/d06/ex02/Vector.class.php on line 55
+
+Warning: Division by zero in /Users/jkangas/Desktop/php-piscine/personal_repo/d06/ex02/Vector.class.php on line 55
+
+Warning: Division by zero in /Users/jkangas/Desktop/php-piscine/personal_repo/d06/ex02/Vector.class.php on line 55
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Normalized $vtc2 is Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+Normalized $vtc2 magnitude is 0
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+$vtc1 + $vtc2 is Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+$vtc1 - $vtc2 is Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+opposite of $vtc1 is Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+scalar product of $vtc1 and 42 is Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+dot product of $vtc1 and $vtc2 is 0
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+cross product of $vtc1 and $vtc2 is Vector( x:0.00, y:0.00, z:0.00, w:0.00 )
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) constructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+cross product of $vtcXunit and $vtcYunit is Vector( x:0.00, y:0.00, z:0.00, w:0.00 )aka $vtcZunit
+cosinus of angle between $vtc1 and $vtc2 is 0
+cosinus of angle between $vtcXunit and $vtcYunit is 0
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed
+Vector( x:0.00, y:0.00, z:0.00, w:0.00 ) destructed

@@ -1,0 +1,17 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex handles vertex coordinates.
+
+New vertex can be created with giving 'x', 'y' and 'z' coordinates, as well as
+the 'color' and homogenous coordinate 'w'. These latter two will by default be 
+white and 1.0 respectively.
+
+New Vertex can be created with:
+new Vertex( array ('x' => 1.0, 'y' => 2.0, 'z' => 0.0 ) )
+
+or with overriding defaul values 'w' and 'color' with:
+new Vertex( array ('x' => 1.0, 'y' => 2.0, 'z' => 0.0, 'w' => 1.5, 'color' => $black ) )
+
+Attributes are private so Vertex has also built in functions to get or set the
+specific values with setX($x) or getX() for example.
+---------------------------------------------------------------------- Vertex ->
