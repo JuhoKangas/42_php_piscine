@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<style>
+			body {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.calculator {
+				max-width: 90vw;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="calculator">
+			<form id="form" action="/">
+				<input type="text" name="left" id="left" required />
+				<select name="operator" id="operator" required>
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+					<option value="%">%</option>
+				</select>
+				<input type="text" name="right" id="right" required />
+				<input type="submit" name="calculate" value="Try me!" />
+			</form>
+		</div>
+
+		<script>
+			const form = document.getElementById("form");
+			const leftNumber = document.getElementById("left");
+			const rightNumber = document.getElementById("right");
+			const operator = document.getElementById("operator");
+
+			form.addEventListener("submit", (e) => {
+				e.preventDefault();
+
+				let left = Number(leftNumber.value);
+				let right = Number(rightNumber.value);
+
+				if (
+					left < 0 ||
+					right < 0 ||
+					isNaN(left) ||
+					isNaN(right) ||
+					!Number.isInteger(left) ||
+					!Number.isInteger(right)
+				) {
+					alert("Error :(");
+					return;
+				}
+
+				switch (operator.value) {
+					case "+":
+						console.log(left + right);
+						alert(left + right);
+						break;
+
+					case "-":
+						console.log(left - right);
+						alert(left - right);
+						break;
+
+					case "*":
+						console.log(left * right);
+						alert(left * right);
+						break;
+
+					case "/":
+						if (right === 0) {
+							console.log("It's over 9000!");
+							alert("It's over 9000!");
+							break;
+						}
+						console.log(left / right);
+						alert(left / right);
+						break;
+
+					case "%":
+						if (right === 0) {
+							console.log("It's over 9000!");
+							alert("It's over 9000!");
+							break;
+						}
+						console.log(left % right);
+						alert(left % right);
+						break;
+
+					default:
+						break;
+				}
+			});
+
+			setInterval(() => {
+				alert("Please, use me...");
+			}, 1000 * 30);
+		</script>
+	</body>
+</html>
