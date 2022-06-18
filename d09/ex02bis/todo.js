@@ -33,7 +33,7 @@ $(window).on("unload", () => {
 });
 
 $("#new").click(() => {
-	let todo = prompt("What is the todo?");
+	let todo = prompt("What is the thing you would like to do?");
 	if (todo.length > 0) {
 		toDoList.push(todo);
 		addItem(todo);
