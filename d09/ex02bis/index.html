@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"
+		></script>
+		<title>To-do</title>
+		<style>
+			body {
+				height: 100vh;
+				padding-top: 150px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				background-color: rgb(126, 128, 137);
+			}
+
+			.listItem {
+				padding: 10px 20px;
+				background-color: #ddd;
+				border: solid 1px #ccc;
+				box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+				border-radius: 10px;
+				margin: 10px 0;
+				text-align: center;
+				width: 400px;
+				overflow-wrap: break-word;
+			}
+
+			button {
+				padding: 5px;
+				width: 10%;
+				background-color: #888;
+				color: white;
+				border-style: none;
+				border: solid 1px #999;
+				border-radius: 5px;
+				box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.2);
+			}
+
+			button:hover {
+				background-color: #999;
+			}
+
+			button:active {
+				box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.2);
+			}
+		</style>
+	</head>
+	<body>
+		<button id="new">New</button>
+		<div id="ft_list"></div>
+
+		<script src="todo.js"></script>
+	</body>
+</html>
