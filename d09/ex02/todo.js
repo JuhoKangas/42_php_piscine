@@ -3,7 +3,7 @@ const listDiv = document.getElementById("ft_list");
 const toDoList = new Array();
 let id = 0;
 
-// Fetch todolist items from cookies
+// Fetch todolist items from cookies and save them to the arry
 window.addEventListener("load", (e) => {
 	if (document.cookie) {
 		let cookieList = JSON.parse(decodeURIComponent(document.cookie));
@@ -17,7 +17,7 @@ window.addEventListener("load", (e) => {
 	}
 });
 
-// Save todo-list items when closing the tab
+// Save todo-list items when closing the tab to encoded JSON object
 window.addEventListener("unload", () => {
 	let listItems = {};
 
@@ -42,6 +42,8 @@ button.addEventListener("click", (e) => {
 	}
 });
 
+// addItem will create new node from the input it gets then assign it a unique id
+// and prepend it to the ft_list element
 function addItem(item) {
 	const node = document.createElement("div");
 	node.setAttribute("class", "listItem");
@@ -51,6 +53,7 @@ function addItem(item) {
 	listDiv.prepend(node);
 }
 
+// Removes the item from internal array as well as from the flow of the page
 function remove() {
 	if (confirm("Are you sure?")) {
 		index = toDoList.indexOf(document.getElementById(this.id).innerHTML);
