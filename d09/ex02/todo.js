@@ -6,14 +6,16 @@ let id = 0;
 // Fetch todolist items from cookies and save them to the arry
 window.addEventListener("load", (e) => {
 	if (document.cookie) {
-		let cookieList = JSON.parse(decodeURIComponent(document.cookie));
+		let cookieList = document.cookie;
+		let toDoString = cookieList.split("=");
+		cookieList = JSON.parse(decodeURIComponent(toDoString[1]));
+		console.log(cookieList);
 		for (i in cookieList) {
 			if (cookieList[i]) {
 				addItem(cookieList[i]);
 				toDoList.push(cookieList[i]);
 			}
 		}
-		console.log(cookieList);
 	}
 });
 
@@ -22,7 +24,7 @@ window.addEventListener("unload", () => {
 	let listItems = {};
 
 	if (toDoList.length === 0) {
-		document.cookie = "";
+		document.cookie = "listItems=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
 		return;
 	}
 	toDoList.forEach((item, index) => {
@@ -30,7 +32,7 @@ window.addEventListener("unload", () => {
 	});
 
 	if (Object.keys(listItems).length !== 0) {
-		document.cookie = encodeURIComponent(JSON.stringify(listItems));
+		document.cookie = "listItems=" + encodeURIComponent(JSON.stringify(listItems));
 	}
 });
 
