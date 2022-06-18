@@ -9,7 +9,6 @@ window.addEventListener("load", (e) => {
 		let cookieList = document.cookie;
 		let toDoString = cookieList.split("=");
 		cookieList = JSON.parse(decodeURIComponent(toDoString[1]));
-		console.log(cookieList);
 		for (i in cookieList) {
 			if (cookieList[i]) {
 				addItem(cookieList[i]);
@@ -59,9 +58,7 @@ function addItem(item) {
 function remove() {
 	if (confirm("Are you sure?")) {
 		index = toDoList.indexOf(document.getElementById(this.id).innerHTML);
-		console.log(index);
 		toDoList.splice(index, 1);
-		console.log(toDoList);
 		this.remove();
 	}
 }

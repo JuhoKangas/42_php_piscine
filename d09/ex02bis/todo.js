@@ -6,7 +6,6 @@ $(document).ready(() => {
 		let cookieList = document.cookie;
 		let toDoString = cookieList.split("=");
 		cookieList = JSON.parse(decodeURIComponent(toDoString[1]));
-		console.log(cookieList);
 		for (i in cookieList) {
 			if (cookieList[i]) {
 				addItem(cookieList[i]);
@@ -53,7 +52,6 @@ function remove() {
 	if (confirm("Are you sure?")) {
 		index = toDoList.indexOf($(this).text());
 		toDoList.splice(index, 1);
-		console.log(toDoList);
 		$(this).remove();
 	}
 }
